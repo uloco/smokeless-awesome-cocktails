@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ButtonPrimary } from "./components/Button";
+import { ButtonPrimary, ButtonSwitcher } from "./components/Button";
 import { Icon } from "./components/Icon";
 import { Ingredient } from "./components/Ingredient";
 
@@ -27,6 +27,7 @@ export const App = () => {
       </div>
       <Icon iconName="shot" />
       <Icon iconName="cocktail" />
+      <ButtonSwitcher />
     </>
   );
 };

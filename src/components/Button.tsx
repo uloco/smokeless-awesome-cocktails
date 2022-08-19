@@ -1,4 +1,6 @@
+import { useState } from "react";
 import styled from "styled-components";
+import { Icon } from "./Icon";
 
 export const ButtonPrimary = styled.button`
   display: flex;
@@ -18,3 +20,27 @@ export const ButtonPrimary = styled.button`
   text-transform: uppercase;
   color: #890200;
 `;
+
+export const ButtonIcon = styled.button`
+  width: 50px;
+  height: 50px;
+  background-color: #890300;
+  cursor: pointer;
+`;
+
+export const ButtonSwitcher = () => {
+  const [activeButton, setActiveButton] = useState<"shot" | "cocktail">(
+    "cocktail"
+  );
+
+  return (
+    <>
+      <ButtonIcon onClick={() => setActiveButton("shot")}>
+        <Icon iconName="shot" active={activeButton === "shot"} />
+      </ButtonIcon>
+      <ButtonIcon onClick={() => setActiveButton("cocktail")}>
+        <Icon iconName="cocktail" active={activeButton === "cocktail"} />
+      </ButtonIcon>
+    </>
+  );
+};
