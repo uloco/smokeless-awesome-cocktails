@@ -19,12 +19,13 @@ export const ButtonPrimary = styled.button`
   font-weight: 800;
   text-transform: uppercase;
   color: #890200;
+  cursor: pointer;
 `;
 
 export const ButtonIcon = styled.button`
   width: 50px;
   height: 50px;
-  background-color: #890300;
+  background-color: #951a1a;
   cursor: pointer;
 `;
 
