@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Icon } from "./components/Icon";
 
 const HomeScreen = styled.div`
   max-width: 400px;
@@ -9,7 +10,7 @@ const HomeScreen = styled.div`
   margin: 0 auto;
 `;
 
-const Button = styled.button`
+const ButtonPrimary = styled.button`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,7 +46,7 @@ export const App = () => {
   return (
     <>
       <HomeScreen />
-      <Button>Go</Button>
+      <ButtonPrimary>Go</ButtonPrimary>
       <Ingredient>IIngredientIngredientngredient</Ingredient>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Ingredient>IIngredientIngredientngredient</Ingredient>
@@ -54,6 +55,8 @@ export const App = () => {
         <div style={{ width: 10 }}></div>
         <Ingredient>Ingredient</Ingredient>
       </div>
+      <Icon iconName="shot" />
+      <Icon iconName="cocktail" />
     </>
   );
 };
