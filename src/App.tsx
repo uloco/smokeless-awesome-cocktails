@@ -9,6 +9,6 @@ const HomeScreen = styled.div`
   margin: 0 auto;
 `;
 
-export default function App() {
+export const App = () => {
   return <HomeScreen />;
-}
+};
