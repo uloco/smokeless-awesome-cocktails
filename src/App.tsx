@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import { ButtonPrimary, ButtonSwitcher } from "./components/Button";
+import { DrinkCanvas } from "./components/DrinkCanvas";
 import { Ingredient } from "./components/Ingredient";
+import { R3FExample } from "./R3FExample";
+import ThreeExample from "./ThreeExample";
 
 const HomeScreen = styled.div`
   max-width: 400px;
   height: 614px;
   padding: 20px;
-  background-color: #951a1a;
+  background-color: #66bbd9;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -54,6 +57,7 @@ export const App = () => {
   return (
     <>
       <HomeScreen>
+        <DrinkCanvas />
         <Header>
           <ButtonSwitcher />
         </Header>
@@ -62,10 +66,11 @@ export const App = () => {
             <Ingredient>Orange Juice</Ingredient>
             <Ingredient>Tequila</Ingredient>
           </Ingredients>
-          <Drink>
+          {/* <DrinkCanvas /> */}
+          {/* <Drink>
             <DrinkLayer color="red" />
             <DrinkLayer color="orange" />
-          </Drink>
+          </Drink> */}
         </Content>
         <ButtonContainer>
           <ButtonPrimary>Go</ButtonPrimary>
