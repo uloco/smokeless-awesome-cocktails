@@ -8,21 +8,31 @@ import { useGLTF, PerspectiveCamera, useAnimations } from "@react-three/drei";
 export function Model(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "/cocktail_mit_camera_2.gltf"
+    "/cocktail_mit_camera_2_final_final_v3_wirklich_wirklich.gltf"
   );
-  const { actions } = useAnimations(animations, group);
+
+  const { actions, mixer } = useAnimations(animations, group);
+
+  console.log({ actions });
 
   useEffect(() => {
     actions.schirmAction.play();
     actions["Cylinder.001Action"].play();
     actions["Cylinder.002Action"].play();
+    actions.IcosphereAction.play();
   }, []);
 
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
+        <group
+          name="BezierCircle"
+          position={[0, 2.46, 0]}
+          rotation={[0, -Math.PI / 2, 0]}
+          scale={1.28}
+        />
         <PerspectiveCamera
-          name="camera"
+          name="Camera"
           makeDefault={true}
           far={100}
           near={0.1}
@@ -81,9 +91,16 @@ export function Model(props) {
           material={materials.cocktail_tex}
           rotation={[0.29, 0, 0]}
         />
+        <mesh
+          name="Icosphere"
+          geometry={nodes.Icosphere.geometry}
+          material={materials.red}
+          position={[-1.28, 2.46, 0]}
+          scale={0.72}
+        />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/cocktail_mit_camera_2.gltf");
+useGLTF.preload("/cocktail_mit_camera_2_final_final_v3_wirklich_wirklich.gltf");
