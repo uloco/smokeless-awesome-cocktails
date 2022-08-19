@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/shot</title>
+    <g id="icon/shot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(14.000000, 13.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M4.90485927,13.3804681 L9.68899972,13.3804681 C9.68899972,6.54584612 10.2604283,2.08569009 11.4032854,7.99360578e-15" id="Path"></path>
+            <path d="M8.8817842e-16,13.3804681 L4.78414045,13.3804681 C4.78414045,6.54584612 5.35556902,2.08569009 6.49842616,8.8817842e-16" id="Path" transform="translate(3.249213, 6.690234) scale(-1, 1) translate(-3.249213, -6.690234) "></path>
+            <path d="M1.23099518,2.16210938 C2.0107525,1.76552473 2.89310506,1.5672324 3.87805285,1.5672324 C5.35547454,1.5672324 5.41274713,2.16210938 7.04991041,2.16210938 C8.14135259,2.16210938 9.25519624,1.96381705 10.3914413,1.5672324" id="Path-2"></path>
+        </g>
+    </g>
+</svg>
