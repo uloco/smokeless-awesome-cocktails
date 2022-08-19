@@ -1,5 +1,7 @@
 import styled from "styled-components";
+import { ButtonPrimary } from "./components/Button";
 import { Icon } from "./components/Icon";
+import { Ingredient } from "./components/Ingredient";
 
 const HomeScreen = styled.div`
   max-width: 400px;
@@ -8,38 +10,6 @@ const HomeScreen = styled.div`
   background-color: #951a1a;
   display: flex;
   margin: 0 auto;
-`;
-
-const ButtonPrimary = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  min-width: 200px;
-  background-color: white;
-  border-style: none;
-  border-radius: 25px;
-  font-family: "Barlow Condensed";
-  font-size: 16px;
-  letter-spacing: 1.01px;
-  line-height: 19px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #890200;
-`;
-
-const Ingredient = styled.div`
-  padding-right: 40px;
-  color: white;
-  font-family: "Barlow Condensed";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.88px;
-  line-height: 18px;
-  border-bottom: 1px solid white;
-  flex-direction: row;
-  max-width: 300px;
 `;
 
 export const App = () => {
